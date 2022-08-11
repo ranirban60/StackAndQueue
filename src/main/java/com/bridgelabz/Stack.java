@@ -20,10 +20,7 @@ public class Stack {
         node.next = top;
         top = node;
     }
-    /*
-     *  create method name as printStack
-     */
-    public void printStack() {
+    public void printStack() {//Create method printStack
         Node node = top;
         /* using while loop
          * node is not null then print node data
@@ -34,10 +31,8 @@ public class Stack {
             node = node.next;
         }
     }
-    /*
-     * main method all program execute in main method
-     */
-    public static void main(String[] args) {
+
+    public static void main(String[] args) {// All program execute in main method
         /*
          * create object for Stack class.
          * object name is stackoperation
