@@ -61,8 +61,8 @@ public class Stack {
         stackoperation.push(56);   //Push operation add 1st element
         stackoperation.push(30);   //Push operation add 2nd element
         stackoperation.push(70);   //Push operation add 3rd element
-        stackoperation.printStack();
-        stackoperation.pop();           //Pop operation for remove element.
-        stackoperation.printStack();    //Print operation
+        stackoperation.printStack();      //Print operation
+        stackoperation.pop();            //Pop operation for remove element.
+        stackoperation.printStack();     //Print operation
     }
 }
