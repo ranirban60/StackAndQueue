@@ -1,5 +1,5 @@
 /*
-Ability to create a Queue
+Ability to Dequeue from the Beginning
  */
 package com.bridgelabz;
 
@@ -41,11 +41,28 @@ public class Queue {
         currentSize++;
         System.out.print(data +"->" );
     }
-
+    /*
+     * Create dequeue method
+     * Remove item from the beginning of the List.
+     */
+    public int dequeue() {
+        int data = front.data;
+        front = front.next;
+        if (isEmpty()) {
+            rear = null;
+        }
+        currentSize--;
+        System.out.println(data + " is removed from the Queue");
+        return data;
+    }
     public static void main(String a[]) {
         Queue queue = new Queue();
-        queue.enqueue( 56);
+        queue.enqueue(56);
+        queue.dequeue();
         queue.enqueue(30);
+        queue.dequeue();
         queue.enqueue(70);
+        queue.dequeue();
+        System.out.println("Queue is Empty");
     }
 }
